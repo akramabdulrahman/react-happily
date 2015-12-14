@@ -1,11 +1,9 @@
 'use strict';
 
 const React = require('react');
-
-module.export = React.createClass({
+module.exports = React.createClass({
 
   getInitialState() {
-
     return Object.assign({}, this.props);
   },
 
@@ -18,7 +16,6 @@ module.export = React.createClass({
   },
 
   render() {
-
     return (
       <div className="hapi-react-route-welcome">
         <h1>{this.state.message}</h1>
@@ -32,4 +29,3 @@ module.export = React.createClass({
     )
   }
 });
-

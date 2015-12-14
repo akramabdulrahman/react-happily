@@ -44,13 +44,13 @@ server.register([{
   });
 
   server.method({name : 'getIndex', method: () => {
-    return {title: 'Hapi React Router Index', message: 'Welcome to The Hapi React Router Example'};
+    return {title: 'Index', message: 'Welcome to The Hapi React Router Example'};
   }});
   server.method({name : 'getHello', method: () => {
-    return {title: 'Hapi React Router Hello', message: 'Well, hello there!'};
+    return {title: 'Hello', message: 'Well, hello there!'};
   }});
   server.method({name : 'getGoodbye', method: () => {
-    return {title: 'Hapi React Router Goodbye', message: 'We are sad to see you go'};
+    return {title: 'Goodbye', message: 'We are sad to see you go'};
   }});
   server.method({name : 'getAbout', method: () => {
     return { title: 'About', message: 'About message'};
@@ -72,7 +72,7 @@ server.register([{
         router: 'routes/AppRoot.js',
         // This is a method of passing a layout.jsx file which will render with
         // the inner content returned by the handler
-        //layout: 'layout.jsx',
+        // layout: 'layout.jsx',
         // This is an alternative method where you can output to a
         // static HTML being created server side
         layout: server.methods.createPage,

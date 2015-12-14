@@ -5,7 +5,6 @@ const React = require('react');
 module.exports = React.createClass({
 
   getInitialState() {
-
     return Object.assign({}, this.props);
   },
 
@@ -16,7 +15,6 @@ module.exports = React.createClass({
       this.setState(json);
     })
   },
-
   render() {
 
     return (
@@ -32,4 +30,3 @@ module.exports = React.createClass({
     )
   }
 });
-

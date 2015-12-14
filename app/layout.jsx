@@ -12,7 +12,6 @@ const Layout = React.createClass({
           <title>{this.props.title || "Hapi React Handler"}</title>
         </head>
         <body>
-          YOU DON'T EVER RENDER?!?
         <div className="container" id="app-mount" dangerouslySetInnerHTML={{ __html: this.props.content }}></div>
         <script id="app-state" dangerouslySetInnerHTML={{ __html: this.props.initialState }}></script>
         </body>
