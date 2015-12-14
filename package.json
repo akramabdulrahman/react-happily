@@ -1,7 +1,7 @@
 {
-  "name": "@tanepiper/quorra",
+  "name": "react-happily",
   "version": "1.0.1",
-  "description": "Hapi route handler that makes react-router your isomorphic server side router.",
+  "description": "A hapi-react boilerplate.",
   "keywords": [
     "hapi",
     "hapijs",
@@ -12,17 +12,16 @@
   "main": "index.js",
   "scripts": {
     "test": "lab -t 100",
-    "example": "node example",
-    "webpack": "webpack --config ./example/webpack.config.js --progress --profile --colors"
+    "webpack": "webpack --config ./webpack.config.js --progress --profile --colors"
   },
-  "author": "Tane Piper <piper.tane@gmail.com> (https://github.com/tanepiper)",
+  "author": "Martin Genev (https://github.com/mgenev)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tanepiper/quorra.git"
+    "url": "https://github.com/mgenev/react-happily.git"
   },
   "bugs": {
-    "url": "https://github.com/tanepiper/quorra/issues"
+    "url": "https://github.com/mgenev/react-happily/issues"
   },
   "engines": {
     "node": ">=4.2.x"
@@ -45,10 +44,13 @@
   "devDependencies": {
     "babel-cli": "~6.1.4",
     "babel-loader": "~6.1.0",
+    "babel-plugin-transform-async-to-generator": "^6.3.13",
     "code": "^2.0.1",
     "hapi": "^11.1.0",
     "inert": "~3.2.0",
+    "install": "^0.4.1",
     "lab": "^7.2.0",
+    "npm": "^3.5.2",
     "webpack": "~1.12.4",
     "webpack-dev-server": "~1.12.1"
   }

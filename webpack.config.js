@@ -3,7 +3,7 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'source-map',
   entry: [
-    './example/app/entry.jsx'
+    './app/entry.jsx'
   ],
   output: {
     path: __dirname + '/public/js/',
@@ -23,7 +23,8 @@ module.exports = {
         loader: 'babel',
         exclude: /node_modules/,
         query: {
-          presets: ['react', 'es2015']
+          presets: ['react', 'es2015'],
+          plugins: ['transform-async-to-generator']
         }
       }
     ]
